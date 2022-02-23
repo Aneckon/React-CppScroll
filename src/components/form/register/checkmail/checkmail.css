@@ -1,0 +1,187 @@
+.checkMail__blue {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #669eff;
+  border: 25px solid #80aeff;
+}
+.checkMail__red {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #e54b4b;
+  border: 25px solid #da5656;
+}
+
+.checkMail__scroll {
+  margin: auto;
+  margin-bottom: 200px;
+}
+
+.checkMail__scroll img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.checkMail__title-blue {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  border: 25px solid #80aeff;
+  border-radius: 50%;
+  padding-top: 70px;
+  padding-bottom: 90px;
+  bottom: -190px;
+  background: white;
+  width: 1151px;
+  height: 370px;
+}
+.checkMail__title-red {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  border: 25px solid #da5656;
+  border-radius: 50%;
+  padding-top: 70px;
+  padding-bottom: 90px;
+  bottom: -190px;
+  background: white;
+  width: 1151px;
+  height: 370px;
+}
+
+.checkMail__title-blue h1,
+.checkMail__title-red h1 {
+  margin-top: 0px;
+  padding-bottom: 45px;
+  font-size: 48px;
+  font-family: 'Margarine', cursive;
+}
+
+@media (max-width: 1200px) {
+  .checkMail__scroll {
+    width: 30%;
+  }
+  .checkMail__title-blue,
+  .checkMail__title-red {
+    width: 90%;
+  }
+  .checkMail__title-blue h1,
+  .checkMail__title-red h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 910px) {
+  .checkMail__scroll {
+    width: 40%;
+  }
+  .checkMail__title-blue,
+  .checkMail__title-red {
+    width: 90%;
+  }
+  .checkMail__title-blue h1,
+  .checkMail__title-red h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 780px) {
+  .checkMail__scroll {
+    width: 50%;
+  }
+  .checkMail__title-blue,
+  .checkMail__title-red {
+    width: 90%;
+    padding-top: 90px;
+  }
+  .checkMail__title-blue h1,
+  .checkMail__title-red h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 670px) {
+  .checkMail__scroll {
+    width: 40%;
+  }
+  .checkMail__title-blue,
+  .checkMail__title-red {
+    height: 40%;
+    width: 90%;
+    bottom: -130px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .checkMail__title-blue h1,
+  .checkMail__title-red h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 630px) {
+  .checkMail__title-blue {
+    height: 42%;
+    width: 90%;
+    border: 12px solid #599ded;
+  }
+  .checkMail__blue {
+    border: 12px solid #599ded;
+  }
+  .checkMail__red {
+    border: 12px solid #da4747;
+  }
+  .checkMail__scroll {
+    width: 60%;
+  }
+  .checkMail__title-red {
+    height: 42%;
+    width: 90%;
+    border: 12px solid #da4747;
+  }
+  .checkMail__title-blue h1,
+  .checkMail__title-red h1 {
+    width: 280px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 420px) {
+  .checkMail__blue {
+    padding-top: 40px;
+  }
+  .checkMail__title-blue h1,
+  .checkMail__title-red h1 {
+    width: 220px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

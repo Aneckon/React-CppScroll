@@ -1,0 +1,242 @@
+.authentication {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  background: #fff;
+}
+.authentication::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 180px;
+  height: 100vh;
+  background: url('../../img/right-desk.svg') no-repeat center;
+  background-size: cover;
+}
+.authentication::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 180px;
+  height: 100vh;
+  background: url('../../img/left-desk.svg') no-repeat center;
+  background-size: cover;
+}
+.logo img {
+  width: 190px;
+  height: auto;
+  margin-bottom: 48px;
+}
+.signinup {
+  font-family: 'Margarine', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 65px;
+  color: #333333;
+  margin-bottom: 31px;
+}
+.authentication__form input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Margarine', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  width: 578px;
+  height: 64px;
+  padding-left: 30px;
+  color: rgba(51, 51, 51, 0.3);
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  background: #fafafa;
+  border-bottom: none;
+}
+.authentication__form input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Margarine', cursive;
+  color: rgba(51, 51, 51, 0.3);
+}
+.input__first {
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: none !important;
+}
+.input__last {
+  border-radius: 0px 0px 8px 8px;
+  border: 1px solid rgba(51, 51, 51, 0.1) !important;
+}
+.send {
+  font-family: 'Margarine', cursive;
+  background: #bbffb5;
+  border: 1px solid #33333380;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 0px 0px 8px 8px;
+  max-width: 139px;
+  width: 100%;
+  height: 32px;
+  color: #33333380;
+  font-size: 20px;
+}
+.accounthaveorcreate {
+  margin-top: 28px;
+}
+.accounthaveorcreate a {
+  font-family: 'Margarine', cursive;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  opacity: 0.7;
+}
+.authentication__form {
+  text-align: center;
+  position: relative;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+.form__error {
+  top: 45px;
+  left: 30px;
+  position: absolute;
+  padding-bottom: 5px;
+  font-family: Margarine;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(173, 9, 9, 0.5);
+}
+@media (max-width: 1020px) {
+  .authentication__form input {
+    width: 458px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 920px) {
+  .logo img {
+    margin-bottom: 28px;
+  }
+  .accounthaveorcreate {
+    margin-top: 18px;
+  }
+  .signinup {
+    margin-bottom: 11px;
+  }
+  .logo img {
+    width: 110px;
+    height: auto;
+  }
+  .authentication__form input {
+    width: 358px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 720px) {
+  .authentication__form {
+    text-align: center;
+  }
+  .send {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .authentication input {
+    width: 207px;
+    height: 63px;
+    margin: 0 auto;
+  }
+  .accounthaveorcreate a {
+    font-size: 18px;
+    border-top: none;
+    position: relative;
+  }
+  .accounthaveorcreate a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    right: 0;
+    margin: 0 auto;
+    width: 110px;
+    height: 1px;
+    background: rgba(51, 51, 51, 0.2);
+  }
+  .logo img {
+    width: 92px;
+    height: auto;
+  }
+  .authentication input {
+    padding-left: 16px;
+  }
+  .form__error {
+    left: 18px;
+    font-size: 10px;
+  }
+  .authentication::after {
+    width: 64px;
+    background: url('../../img/left-mob.svg') no-repeat center;
+  }
+  .authentication::before {
+    width: 64px;
+    background: url('../../img/right-mob.svg') no-repeat center;
+  }
+}
+
+@media (max-width: 480px) {
+  .authentication input {
+    font-size: 14px;
+    width: 180px;
+    height: 48px;
+  }
+  .signinup {
+    font-size: 40px;
+    line-height: 54px;
+  }
+  .accounthaveorcreate a {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .send {
+    max-width: 96px;
+    width: 100%;
+    height: 28px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .authentication::before {
+    width: 100px;
+  }
+  .authentication::after {
+    width: 110px;
+  }
+  .authentication__form input::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .form__error {
+    font-size: 8px;
+    top: 34px;
+  }
+  .authentication::after {
+    width: 58px;
+  }
+  .authentication::before {
+    width: 58px;
+  }
+}
+@media (max-height: 630px) {
+  .logo img {
+    max-width: 110px;
+  }
+}
