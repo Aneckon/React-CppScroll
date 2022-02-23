@@ -12,7 +12,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 180px;
+  width: 248px;
   height: 100vh;
   background: url('../../img/right-desk.svg') no-repeat center;
   background-size: cover;
@@ -22,7 +22,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 180px;
+  width: 248px;
   height: 100vh;
   background: url('../../img/left-desk.svg') no-repeat center;
   background-size: cover;
@@ -116,10 +116,16 @@
   line-height: 16px;
   color: rgba(173, 9, 9, 0.5);
 }
-@media (max-width: 1020px) {
+@media (max-width: 1120px) {
   .authentication__form input {
     width: 458px;
     height: 44px;
+  }
+  .authentication::after {
+    width: 180px;
+  }
+  .authentication::before {
+    width: 180px;
   }
 }
 
